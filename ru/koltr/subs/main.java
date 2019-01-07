@@ -13,6 +13,7 @@ import net.minecraft.block.Block;
 public class main {
 
 	public static Block ZBopora;
+	public static Block ZBopora2;
 	
 	/*
 	Пиши блоки всегда выше всего
@@ -37,6 +38,10 @@ public class main {
 		ZBopora = new ZBopora1();
 		GameRegistry.registerBlock(ZBopora, "ZBopora"); // ковычки для .lang чтоб указать какой именно блок
 		GameRegistry.registerTileEntity(TileEntityObj.class, "TileEntityObj");
+		
+		ZBopora2 = new ZBopora21();
+		GameRegistry.registerBlock(ZBopora2, "ZBopora2"); // ковычки для .lang чтоб указать какой именно блок
+		GameRegistry.registerTileEntity(TileEntityObj1.class, "TileEntityObj1");
 		
 		
 		proxy.preInit();

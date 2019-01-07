@@ -17,6 +17,9 @@ public class ProxyClient extends ProxyCommon {
 				ClientRegistry.bindTileEntitySpecialRenderer(TileEntityObj.class, new RenderTileEntityObj());
 				MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(main.ZBopora), new RenderItemBlockObj());  //Итем рендер не обязателен
 		
+				ClientRegistry.bindTileEntitySpecialRenderer(TileEntityObj1.class, new RenderTileEntityObj1());
+				MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(main.ZBopora2), new RenderItemBlockObj1());
+				
 	}
 
 }
